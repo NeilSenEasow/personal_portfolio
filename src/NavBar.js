@@ -21,6 +21,10 @@ function NavBar()   {
         return () => window.removeEventListener("scroll", onScroll); 
     }, [])
 
+    function onUpdateActiveLink(value)  {
+        setActiveLink(value);
+    }
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : null}>
             <Container>
