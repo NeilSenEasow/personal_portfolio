@@ -28,7 +28,7 @@ function NavBar()   {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : null}>
             <Container>
-                <Navbar.Brand href="#home">NeilSenEasow</Navbar.Brand>
+                <Navbar.Brand className="portfolio-logo"href="#home">NeilSenEasow</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
