@@ -2,20 +2,58 @@ import React, { useState, useEffect } from "react";
 
 function Banner() {
   const texts = ["Hi There!", "I'm Neil", "I'm a front-end developer"];
+  const typingSpeed = 100; 
+  const pauseBetweenTexts = 2000; 
+
+  const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0); 
+  const [isDeleting, setIsDeleting] = useState(true); 
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 2000); 
+    const currentString = texts[currentIndex];
+    const delay = isDeleting ? typingSpeed / 2 : typingSpeed;
 
-    return () => clearInterval(interval);
-  }, [texts.length]);
+    if (!isDeleting && charIndex < currentString.length) {
+      // Typing forward
+      const typing = setTimeout(() => {
+        setCurrentText(currentString.substring(0, charIndex + 1));
+        setCharIndex((prev) => prev + 1);
+      }, delay);
+      return () => clearTimeout(typing);
+    } else if (isDeleting && charIndex > 0) {
+      // Deleting backward
+      const deleting = setTimeout(() => {
+        setCurrentText(currentString.substring(0, charIndex - 1));
+        setCharIndex((prev) => prev - 1);
+      }, delay);
+      return () => clearTimeout(deleting);
+    } else if (!isDeleting && charIndex === currentString.length) {
+      // Pause after typing the entire text
+      const pause = setTimeout(() => {
+        setIsDeleting(true);
+      }, pauseBetweenTexts);
+      return () => clearTimeout(pause);
+    } else if (isDeleting && charIndex === 0) {
+      // Move to the next tet after deletion
+      const nextText = setTimeout(() => {
+        setIsDeleting(false);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
+      }, delay);
+      return () => clearTimeout(nextText);
+    }
+  }, [charIndex, isDeleting, texts, currentIndex]);
 
   return (
+    <section>
     <div className="banner">
-      <p>{texts[currentIndex]}</p>
+      <p>
+        {currentText}
+        <span className="cursor"></span>
+      </p>
     </div>
+  </section>
+  
   );
 }
 

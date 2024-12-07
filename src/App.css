@@ -221,6 +221,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 100px;
   margin-left: 30px;
 }
+/* Cursor */
+.cursor {
+  display: inline-block;
+  width: 2px; 
+  background-color: white; /* Cursor color */
+  margin-left: 2px;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+@keyframes blink {
+  50% {
+    background-color: transparent; 
+  }
+}
+
 /*
 .banner .tagline {
   font-weight: 700;
