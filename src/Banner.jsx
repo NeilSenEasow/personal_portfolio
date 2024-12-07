@@ -49,7 +49,7 @@ function Banner() {
     <div className="banner">
       <p>
         {currentText}
-        <span className="cursor"></span>
+        <span className="cursor">|</span>
       </p>
     </div>
   </section>

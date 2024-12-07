@@ -28,7 +28,7 @@ function NavBar()   {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : null}>
             <Container>
-                <Navbar.Brand className="portfolio-logo"href="#home">NeilSenEasow</Navbar.Brand>
+                <Navbar.Brand className="portfolio-logo"href="#home">NEIL</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
@@ -40,9 +40,9 @@ function NavBar()   {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.instagram.com/neil.sen_04/"><i class="bi bi-instagram"></i></a>
                             <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-                            <a href="https://twitter.com/"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://x.com/NeilSenEasow"><i class="bi bi-twitter-x"></i></a>
                         </div>
                         <button className="skrr" onClick={() => console.log("Let's connect!")}><span>Let's connect</span></button>
                     </span>
