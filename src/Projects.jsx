@@ -1,8 +1,5 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import { faReact, faJs, faPython, faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faCode, faBrain, faUsers } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./Projects.css";
 
 const viewProjectLinkStyles = {
@@ -23,28 +20,28 @@ const projects = [
         description: 'A note-taking app to keep your daily tasks and notes organized.',
         image: require('./assets/images/KeeperApp.png'),
         alt: 'Keeper App',
-        link: '#', 
+        link: 'https://9434vf.csb.app/', 
       },
       {
         title: 'To Do List',
         description: 'A simple application to track your pending tasks and achieve your goals.',
         image: require('./assets/images/ToDoList.png'),
         alt: 'To Do List',
-        link: '#', 
+        link: 'https://9s6tss.csb.app/', 
       },
       {
         title: 'Genesis',
         description: 'A website to showcase projects using different libraries and technologies.',
         image: require('./assets/images/Genesis.png'),
         alt: 'Genesis',
-        link: '#', 
+        link: 'https://neilseneasow.github.io/GENESIS_HACKATHON/', 
       },
       {
         title: 'Career Finder',
         description: 'A website to find possible careers based on your skills and experience.',
         image: require('./assets/images/CareerFinder.png'),
         alt: 'Career Finder',
-        link: '#', 
+        link: 'https://neilseneasow.github.io/Live_Project/', 
       },
 ];
 
