@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
+import "./banner.css"
 
 function Banner() {
   const texts = ["Hi There!", "I'm Neil", "I'm a front-end developer"];
-  const typingSpeed = 100; 
-  const pauseBetweenTexts = 2000; 
+  const typingSpeed = 100;
+  const pauseBetweenTexts = 2000;
 
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0); 
-  const [isDeleting, setIsDeleting] = useState(true); 
+  const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(true);
 
   useEffect(() => {
     const currentString = texts[currentIndex];
@@ -46,14 +47,13 @@ function Banner() {
 
   return (
     <section>
-    <div className="banner">
-      <p>
-        {currentText}
-        <span className="cursor">|</span>
-      </p>
-    </div>
-  </section>
-  
+      <div className="banner">
+        <p>
+          {currentText}
+          <span className="cursor"></span>
+        </p>
+      </div>
+    </section>
   );
 }
 
