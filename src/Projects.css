@@ -1,0 +1,103 @@
+.skill {
+  background: #121212;
+  padding: 80px 0;
+}
+
+.skill-bx {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.skill-bx h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skill-bx p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.carousel-image {
+    max-height: 400px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain; /* Ensures images don't get distorted */
+    margin: 0 auto; /* Centers images horizontally within carousel */
+    display: block;
+}
+
+.carousel-caption-custom {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for caption */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 500px;
+}
+
+
+.carousel-caption-custom h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.carousel-caption-custom p {
+    color: #eee;
+    font-size: 1.1em;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-category {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; /* Dark background for the skill category */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-category:hover {
+    background-color: #333; /* Slightly lighter background on hover */
+}
+
+.skill-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Gap between skill items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-item svg {
+    color: #00bcd4; /* Color of the icons */
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    color: #fff;
+}
+
+.view-project:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
