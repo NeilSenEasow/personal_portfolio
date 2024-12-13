@@ -16,10 +16,10 @@ function Projects() {
                             <img
                                 className="carousel-image"
                                 src={require('./assets/images/KeeperApp.png')}
-                                alt="First slide"
+                                alt="Keeper App"
                             />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
+                            <Carousel.Caption className="carousel-caption-custom">
+                                <h3>Keeper App</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -27,21 +27,32 @@ function Projects() {
                             <img
                                 className="carousel-image"
                                 src={require('./assets/images/ToDoList.png')}
-                                alt="Second slide"
+                                alt="To Do List"
                             />
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
+                            <Carousel.Caption className="carousel-caption-custom">
+                                <h3>To Do List</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="carousel-image"
-                                src={require('./assets/images/image3.png')}
-                                alt="Third slide"
+                                src={require('./assets/images/Genesis.png')}
+                                alt="Genesis"
                             />
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
+                            <Carousel.Caption className="carousel-caption-custom">
+                                <h3>Genesis</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="carousel-image"
+                                src={require('./assets/images/CareerFinder.png')}
+                                alt="Career Finder"
+                            />
+                            <Carousel.Caption className="carousel-caption-custom">
+                                <h3>Career Finder</h3>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
@@ -49,8 +60,6 @@ function Projects() {
                 </div>
             </div>
              <div className="skill-bx">
-                {/* <h2>Skills</h2>
-                <p>My technical and soft skills.</p> */}
                 <div className="skills-grid">
                      {/* Technical Skills */}
                      <div className="skill-category">
