@@ -338,6 +338,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8; 
 }
 
+.carousel-image {
+  width: 940px;   /* Example width - adjust as needed */
+  height: 580px;  /* Example height - adjust as needed */
+  overflow: hidden; /*Ensures the image does not overflow container*/
+}
+.carousel-image::before {
+  content: "";
+  display: block;
+  padding-top: 62.5%; /*Calculated by (height / width) * 100, which is (600 / 960) * 100 = 62.5%*/
+}
+.carousel-image > * {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
 .background-image-left {
   top: 28%;
   position: absolute;
