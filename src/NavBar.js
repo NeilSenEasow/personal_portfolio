@@ -25,6 +25,11 @@ function NavBar()   {
         setActiveLink(value);
     }
 
+    function handleClick() {
+        const customLink = "https://www.linkedin.com/in/neil-sen-easow-973606258/"; 
+        window.location.href = customLink;
+    }
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : null}>
             <Container>
@@ -44,7 +49,7 @@ function NavBar()   {
                             <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
                             <a href="https://x.com/NeilSenEasow"><i class="bi bi-twitter-x"></i></a>
                         </div>
-                        <button className="skrr" onClick={() => console.log("Let's connect!")}><span>Let's connect</span></button>
+                        <button className="skrr" onClick={handleClick}><span>Let's connect</span></button>
                     </span>
                 </Navbar.Collapse>
             </Container>
