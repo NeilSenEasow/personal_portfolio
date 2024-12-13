@@ -1,120 +1,103 @@
-/************ Skills Css ************/
 .skill {
-    padding: 0 0 50px 0;
-    position: relative;
-  }
-  
-  .skill-bx {
-    background: #151515;
-    border-radius: 64px;
+  background: #121212;
+  padding: 80px 0;
+}
+
+.skill-bx {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.skill-bx h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skill-bx p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.carousel-image {
+    max-height: 400px; /* Adjust as needed */
+    width: auto;
+    object-fit: contain; /* Ensures images don't get distorted */
+    margin: 0 auto; /* Centers images horizontally within carousel */
+    display: block;
+}
+
+.carousel-caption-custom {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for caption */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 500px;
+}
+
+
+.carousel-caption-custom h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.carousel-caption-custom p {
+    color: #eee;
+    font-size: 1.1em;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-category {
     text-align: center;
-    padding: 60px 50px;
-    margin-top: -60px;
-  }
-  
-  .skill h2 {
-    font-size: 45px;
-    font-weight: 700;
-    color: #fff; 
+    padding: 20px;
+    background-color: #222; /* Dark background for the skill category */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.skill-category:hover {
+    background-color: #333; /* Slightly lighter background on hover */
+}
+
+.skill-category h3 {
+    font-size: 1.5em;
     margin-bottom: 20px;
-  }
-  
-  .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-  }
-  
-  .skill-slider {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .skill-slider .item img {
-    width: 100%; 
-    height: auto; 
-    margin: 0 auto 15px auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
-  }
-  
-  .carousel-caption h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff; 
-  }
-  
-  .carousel-caption p {
-    font-size: 18px;
-    color: #B8B8B8; 
-  }
-  
-  .carousel-image {
-    width: 900px;   
-    height: 540px;  
-    overflow: hidden; 
-  }
-  .carousel-image::before {
-    content: "";
-    display: block;
-    padding-top: 62.5%; 
-  }
-  .carousel-image > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-  
-  .carousel-caption-custom {
-    bottom: 20px;
+    color: #fff;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Gap between skill items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    left: 20px;
-    right: 20px;
-    position: relative; /* Make it a positioning context for the reflection */
-    margin-top: 20px;
-  }
-  
-  .carousel-caption-custom::after {
-    content: attr(data-text); /* Use content from the data-text attribute */
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -20px; /* Position the reflection below the main text */
-    transform: scaleY(-1); /* Flip vertically for the reflection effect */
-    opacity: 0.5; /* Adjust opacity for desired reflection intensity */
-    text-align: left;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 100% ); /* Optional gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .carousel-caption-custom h3{
-    display: inline;
-  }
-  .carousel-caption-custom h3::before{
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    transform: scaleY(-1); /* Flip vertically for the reflection effect */
-    opacity: 0.5; /* Adjust opacity for desired reflection intensity */
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.3) 100% ); /* Optional gradient */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: block;
-  }
-  
-  .background-image-left {
-    top: 28%;
-    position: absolute;
-    bottom: 0;
-    width: 40%; 
-    z-index: -4;
-    object-fit: cover; 
-  }
+}
+
+.skill-item svg {
+    color: #00bcd4; /* Color of the icons */
+    margin-bottom: 10px;
+}
+
+.skill-item span {
+    color: #fff;
+}
+
+.view-project:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
