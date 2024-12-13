@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { faReact, faJs, faPython, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faBrain, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "./Projects.css";
 
 function Projects() {
     return (
@@ -19,8 +20,8 @@ function Projects() {
                                 alt="Keeper App"
                             />
                             <Carousel.Caption className="carousel-caption-custom">
-                                <h3>Keeper App</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                 <h3 data-text="Keeper App">Keeper App</h3>
+                                 <p data-text="A note-taking app to keep your daily tasks and notes organized.">A note-taking app to keep your daily tasks and notes organized.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item interval={500}>
@@ -30,8 +31,8 @@ function Projects() {
                                 alt="To Do List"
                             />
                             <Carousel.Caption className="carousel-caption-custom">
-                                <h3>To Do List</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                 <h3 data-text="To Do List">To Do List</h3>
+                                <p data-text="A simple application to track your pending tasks and achieve your goals.">A simple application to track your pending tasks and achieve your goals.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -41,8 +42,8 @@ function Projects() {
                                 alt="Genesis"
                             />
                             <Carousel.Caption className="carousel-caption-custom">
-                                <h3>Genesis</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h3 data-text="Genesis">Genesis</h3>
+                                <p data-text="A website to showcase projects using different libraries and technologies.">A website to showcase projects using different libraries and technologies.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -52,8 +53,8 @@ function Projects() {
                                 alt="Career Finder"
                             />
                             <Carousel.Caption className="carousel-caption-custom">
-                                <h3>Career Finder</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h3 data-text="Career Finder">Career Finder</h3>
+                                 <p data-text="A website to find possible careers based on your skills and experience.">A website to find possible careers based on your skills and experience.</p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
