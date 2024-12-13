@@ -3,21 +3,19 @@ import Carousel from 'react-bootstrap/Carousel';
 import { faReact, faJs, faPython, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faBrain, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import './Projects.css'; Import the custom CSS file
 
 function Projects() {
     return (
         <section className="skill">
           <div className="skill-bx">
-                <h2>Skills</h2>
-                <p>Some of my skills and expertise in different technologies.</p>
-
+                <h2>Projects</h2>
+                <p>Here are some of my projects, showcasing my skills and expertise in different technologies.</p>
                 <div className="skill-slider">
                     <Carousel>
                         <Carousel.Item interval={1000}>
                             <img
                                 className="carousel-image"
-                                src={require('./assets/images/image1.png')}
+                                src={require('./assets/images/KeeperApp.png')}
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -28,7 +26,7 @@ function Projects() {
                         <Carousel.Item interval={500}>
                             <img
                                 className="carousel-image"
-                                src={require('./assets/images/image2.png')}
+                                src={require('./assets/images/ToDoList.png')}
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
