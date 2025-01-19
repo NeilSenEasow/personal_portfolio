@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel';
 import "./Projects.css";
 
 const viewProjectLinkStyles = {
@@ -45,40 +44,35 @@ const projects = [
       },
 ];
 
-
 function Projects() {
     return (
-        <section className="skill">
-          <div className="skill-bx">
+        <section className="projects">
+          <div className="projects-bx">
                 <h2>Projects</h2>
                 <p>Here are some of my projects, showcasing my skills and expertise in different technologies.</p>
-                <div className="skill-slider">
-                    <Carousel>
-                        {projects.map((project, index) => (
-                          <Carousel.Item key={index} interval={1000}>
-                                <img
-                                    className="carousel-image"
-                                    src={project.image}
-                                    alt={project.alt}
-                                />
-                                <Carousel.Caption className="carousel-caption-custom">
-                                    <h3 data-text={project.title}>{project.title}</h3>
-                                    <p data-text={project.description}>{project.description}</p>
-                                     <div style={{ marginTop: '20px', textAlign: 'center' }}>
-                                         <a
-                                              className="view-project"
-                                              href={project.link}
-                                              style={viewProjectLinkStyles}
-                                              onMouseOver={e => {e.target.style.backgroundColor = '#fff'; e.target.style.color = '#121212';}}
-                                              onMouseOut={e => {e.target.style.backgroundColor = '#121212'; e.target.style.color = '#fff';}}
-                                          >
-                                              View Project
-                                          </a>
-                                      </div>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                         ))}
-                    </Carousel>
+                <div className="projects-grid">
+                    {projects.map((project, index) => (
+                        <div className="project-item" key={index}>
+                            <img
+                                className="project-image"
+                                src={project.image}
+                                alt={project.alt}
+                            />
+                            <div className="project-info">
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <a
+                                    className="view-project"
+                                    href={project.link}
+                                    style={viewProjectLinkStyles}
+                                    onMouseOver={e => {e.target.style.backgroundColor = '#fff'; e.target.style.color = '#121212';}}
+                                    onMouseOut={e => {e.target.style.backgroundColor = '#121212'; e.target.style.color = '#fff';}}
+                                >
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
