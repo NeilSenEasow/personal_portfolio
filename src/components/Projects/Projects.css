@@ -1,0 +1,114 @@
+/* Projects Section */
+.projects {
+  background: #121212;
+  padding: 80px 0;
+}
+
+.projects-bx {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.projects-bx h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.projects-bx p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: #eee;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.view-project {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #121212;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.view-project:hover {
+  background-color: #fff;
+  color: #121212;
+}
+
+.view-project:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Carousel Styles */
+.carousel-image {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel-caption-custom {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 500px;
+}
+
+.carousel-caption-custom h3 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.carousel-caption-custom p {
+  color: #eee;
+  font-size: 1.1em;
+}

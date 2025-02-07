@@ -1,0 +1,87 @@
+/************ Skills CSS ************/
+.skill-bx {
+    padding: 50px;
+    background-color: #121212; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between skill categories */
+  }
+  
+  .skill-category {
+    flex: 1 1 300px; /* Flexible width with a minimum of 300px */
+    background-color: #1e1e1e; /* Slightly lighter background for categories */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  
+  .skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff; /* Underline */
+    padding-bottom: 10px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #2a2a2a; /* Skill item background */
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); /* Elevated shadow on hover */
+  }
+  
+  .skill-item span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .skill-item svg {
+    color: #61dafb; /* Default color for icons (can be customized) */
+  }
+  
+  .skill-item:nth-child(2n) svg {
+    color: #f7df1e; /* JavaScript yellow */
+  }
+  
+  .skill-item:nth-child(3n) svg {
+    color: #3776ab; /* Python blue */
+  }
+  
+  .skill-item:nth-child(4n) svg {
+    color: #68a063; /* Node.js green */
+  }
+  
+  .skill-item:nth-child(5n) svg {
+    color: #e34c26; /* HTML/CSS orange */
+  }
+  
+  @media (max-width: 768px) {
+    .skills-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

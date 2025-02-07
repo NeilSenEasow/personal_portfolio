@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./banner.css"
+import "./Banner.css"
 
 function Banner() {
     const texts = ["Hi There!", "I'm Neil", "I'm a front-end developer"];

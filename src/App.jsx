@@ -1,8 +1,8 @@
 import './App.css';
-import NavBar from "./NavBar.js"
-import Banner from './Banner.jsx';
-import Projects from './Projects.jsx';
-import Skills from './Skills.jsx';
+import NavBar from "./components/Navbar/Navbar"
+import Banner from './components/Banner/Banner';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
